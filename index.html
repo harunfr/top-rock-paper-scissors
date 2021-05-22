@@ -7,27 +7,24 @@
   <body>
     <script>
       var randomPlayerSelection = "";
-
       var randomUserNumber = Math.random();
-      if (randomUserNumber <= 1 / 3) {
-        randomPlayerSelection = "rock";
-      } else if (randomUserNumber <= 2 / 3 && randomUserNumber >= 1 / 3) {
-        randomPlayerSelection = "paper";
-      } else {
-        randomPlayerSelection = "scissors";
-      }
+      randomPlayerSelection =
+        randomUserNumber < 1 / 3
+          ? "rock"
+          : randomUserNumber >= 2 / 3
+          ? "paper"
+          : "scissors";
 
-      const computerPlay = () => {
+      let computerPlay = () => {
         var randomNumber = Math.random();
-        if (randomNumber <= 1 / 3) {
-          return "rock";
-        } else if (randomNumber <= 2 / 3 && randomNumber >= 1 / 3) {
-          return "paper";
-        } else {
-          return "scissors";
-        }
+        randomUserNumber < 1 / 3
+          ? "rock"
+          : randomUserNumber >= 2 / 3
+          ? "paper"
+          : "scissors";
       };
       var computerSelection = computerPlay();
+      computerPlay();
       console.log(computerSelection);
 
       const playRound = function (playerSelection, computerSelection) {
