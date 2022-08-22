@@ -1,5 +1,6 @@
 {
   "name": "rocks-papers-pairs-of-scissors",
+  "homepage": "https://harunfr.github.io/top-rock-paper-scissors",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
